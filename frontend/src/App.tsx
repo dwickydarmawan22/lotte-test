@@ -239,7 +239,7 @@ function App() {
       gradientFrom: "#dbeafe",
       gradientTo: "#bfdbfe",
       additionalcomponent: (
-        <CustomWaterTank value={currentWeather.rainfall} max={26} unit={"mm"}/>
+        <CustomWaterTank value={currentWeather.rainfall} max={26} unit={"mm"} />
       ),
     },
     {
@@ -253,7 +253,11 @@ function App() {
       gradientFrom: "#cffafe",
       gradientTo: "#a5f3fc",
       additionalcomponent: (
-        <CustomWaterTank value={currentWeather.relativeHumidity} max={100} unit={"%"}/>
+        <CustomWaterTank
+          value={currentWeather.relativeHumidity}
+          max={100}
+          unit={"%"}
+        />
       ),
     },
     {
@@ -276,7 +280,7 @@ function App() {
     <Box
       sx={{
         minHeight: "100vh",
-        background: "#0f2249",
+        background: "#1f88e6",
         p: { xs: 2, md: 4 },
       }}
     >
@@ -284,7 +288,6 @@ function App() {
         <Box
           sx={{
             borderRadius: 4,
-            boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)",
             mb: 4,
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
